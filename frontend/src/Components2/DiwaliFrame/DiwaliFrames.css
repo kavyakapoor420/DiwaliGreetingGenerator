@@ -1,0 +1,54 @@
+.frame-selection {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.frame-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 10px;
+  transition: border 0.3s;
+  position: relative;
+}
+
+.frame-option.selected {
+  border-color: #ffcc00;
+}
+
+.frame-info {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.frame-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.frame-description {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.frame-info-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.checkmark {
+  font-size: 2rem;
+  color: #ffcc00;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

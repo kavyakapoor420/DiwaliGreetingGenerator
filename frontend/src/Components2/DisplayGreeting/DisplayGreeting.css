@@ -1,0 +1,60 @@
+.greeting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full height of the viewport */
+    background-color:  #212121; /* Light background color */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+   color:  #f39c12;;
+}
+.greeting-card {
+    background-color: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure children are clipped to the border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Card shadow */
+    text-align: center; /* Center text inside the card */
+    padding: 20px; /* Padding inside the card */
+    max-width: 400px; /* Max width of the card */
+    width: 100%; /* Full width for smaller screens */
+}
+
+.greeting-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-bottom: 15px; /* Space below the image */
+}
+
+.greeting-message {
+    font-size: 1.2rem; /* Slightly larger font size for readability */
+    color: #333; /* Dark gray text color */
+    font-weight: bold; /* Bold text */
+    animation:fadeInScale 2s infinite;
+}
+@keyframes fadeInScale {
+    0% {
+        opacity: 0; /* Fully transparent */
+        transform: scale(0.5); /* Start smaller */
+    }
+    50% {
+        opacity: 1; /* Fully visible */
+        transform: scale(1.1); /* Scale up slightly */
+    }
+    100% {
+        opacity: 0; /* Fade out */
+        transform: scale(1); /* Return to normal size */
+    }
+  }
+.loading {
+    font-size: 1.5rem; /* Larger font for loading */
+    color: #555; /* Medium gray color */
+    text-align: center; /* Center loading text */
+}
+
+.not-found {
+    font-size: 1.5rem; /* Larger font for not found message */
+    color: #d9534f; /* Red color for error messages */
+    text-align: center; /* Center not found message */
+}
